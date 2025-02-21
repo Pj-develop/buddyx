@@ -2,6 +2,9 @@
 
 A mobile application designed to help professionals capture action items, meeting details, and key discussion points during conversations. The app records live audio, transcribes it in real time using Deepgram's API, and organizes the content into actionable tasks and meeting notes. The solution leverages Expo for rapid mobile development and Supabase for backend services.
 
+- **App Walkthrough:**  
+  [Video Demo - Main Actions](https://youtu.be/LLvJLa591pw)
+
 ---
 
 ## Table of Contents
