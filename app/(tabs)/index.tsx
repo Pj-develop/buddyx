@@ -8,7 +8,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import WaveAnimation from '../../components/WaveAnimation';
 import { analyzeTranscript } from '../../utils/gemini';
-import { saveTranscript } from '../../utils/mongodb';
+import { saveTranscript } from '../../utils/database';
 
 export default function RecordScreen() {
   const [recording, setRecording] = useState<Audio.Recording | null>(null);
@@ -233,3 +233,20 @@ const styles = StyleSheet.create({
     backgroundColor: '#007AFF',
   },
 });
+
+
+
+async function transcribeAudio(audioUrl) {
+  const response = await fetch('https://your-project.supabase.co/functions/v1/transcribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ audioUrl }),
+  });
+  
+  const data = await response.json();
+  if (response.ok) {
+    return data.transcription;
+  } else {
+    throw new Error(data.error);
+  }
+}
