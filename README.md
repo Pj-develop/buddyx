@@ -1,4 +1,3 @@
-```md
 # BuddyX - Smart Voice Assistant for Professionals
 
 A mobile application designed to help professionals capture action items, meeting details, and key discussion points during conversations. The app records live audio, transcribes it in real time using Deepgram's API, and organizes the content into actionable tasks and meeting notes. The solution leverages Expo for rapid mobile development and Supabase for backend services.
@@ -112,8 +111,8 @@ The **BuddyX - Smart Voice Assistant for Professionals** aims to solve the probl
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/smart-voice-assistant.git
-   cd smart-voice-assistant
+   git clone https://github.com/Pj-develop/buddyx.git
+   cd buddyx
    ```
 
 2. **Install Dependencies:**
